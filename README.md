@@ -35,3 +35,5 @@ Una vez activado el entorno, instala todas las librerías necesarias:
 Una vez completada la instalación, puedes lanzar la aplicación:
 
 ```python app.py```
+
+Esto lanzará la aplicación web en el puerto 5000
