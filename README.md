@@ -1,1 +1,2 @@
-# pps_python_git_docker
+# La Bayeta de la Fortuna
+“La Bayeta de la Fortuna” es una aplicación web sencilla que muestra un mensaje auspicioso aleatorio cada vez que accedes a ella. Está inspirada en las galletas de la fortuna y diseñada para ser fácil de ejecutar y mantener.
