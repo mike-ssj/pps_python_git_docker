@@ -30,8 +30,23 @@ Una vez activado el entorno, instala todas las librerías necesarias:
 
 ---
 
-## Ejecución de la Aplicación
+## Ejecución de la Aplicación (Sin Docker)
 
 Una vez completada la instalación, puedes lanzar la aplicación:
 
 ```python app.py```
+
+## Ejecución de la Aplicación (Con Docker)
+### Construcción de la imagen Docker
+```docker build -t bayeta-fortuna .```
+
+### Ejecución del contenedor
+```docker run -p 8000:5000 bayeta-fortuna```
+
+## Acceso a la aplicación
+
+### Abrir en el navegador: (Con Docker)
+```http://localhost:8000```
+
+### Abrir en el navegador: (Sin Docker)
+```http://localhost:5000```
