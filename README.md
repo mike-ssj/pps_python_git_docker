@@ -30,23 +30,30 @@ Una vez activado el entorno, instala todas las librerías necesarias:
 
 ---
 
+## Ejecución de la Aplicación (Con Docker Compose) **RECOMENDADO**
+Esta opción es la más sencilla, pero hay que tener docker-compose instalado:
+
+```docker-compose up --build```
+
+## Ejecución de la Aplicación (Con Docker Estándar)
+Para crear todos los contenedores manualmente, se puede hacer con los siguientes comandos:
+```
+sudo docker network create bayeta-net
+
+sudo docker run -d --name mongodb --network bayeta-net mongo
+
+sudo docker build -t bayeta .
+sudo docker run -d --name bayeta --network bayeta-net -p 5000:5000 bayeta
+```
+
 ## Ejecución de la Aplicación (Sin Docker)
 
-Una vez completada la instalación, puedes lanzar la aplicación:
+Si se quiere lanzar la app sin docker:
 
 ```python app.py```
 
-## Ejecución de la Aplicación (Con Docker)
-### Construcción de la imagen Docker
-```docker build -t bayeta-fortuna .```
-
-### Ejecución del contenedor
-```docker run -p 8000:5000 bayeta-fortuna```
 
 ## Acceso a la aplicación
 
-### Abrir en el navegador: (Con Docker)
-```http://localhost:8000```
-
-### Abrir en el navegador: (Sin Docker)
+### Abrir en el navegador:
 ```http://localhost:5000```

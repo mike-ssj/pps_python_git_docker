@@ -16,4 +16,4 @@ ENV PATH=/root/.local/bin:$PATH
 
 COPY . .
 
-CMD ["python", "app.py"]
+CMD ["bash", "-c", "python frases_mongo.py && python app.py"]
