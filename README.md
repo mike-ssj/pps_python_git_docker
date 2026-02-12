@@ -57,3 +57,5 @@ Si se quiere lanzar la app sin docker:
 
 ### Abrir en el navegador:
 ```http://localhost:5000```
+
+(No había leído toda la práctica e implementé docker compose en la rama de mongodb por comodidad -.-")

@@ -4,3 +4,4 @@ __pycache__/
 env/
 Dockerfile
 README.md
+docker-compose.yml
