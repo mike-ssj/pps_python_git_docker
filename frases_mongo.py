@@ -22,8 +22,7 @@ def instanciar():
 def add(frases: list):
     cliente_mongo, frases_auspiciosas = instanciar()
 
-    if frases_auspiciosas.count_documents({}) == 0:
-        frases_auspiciosas.insert_many(frases)
+    frases_auspiciosas.insert_many(frases)
     cliente_mongo.close()
 
 
