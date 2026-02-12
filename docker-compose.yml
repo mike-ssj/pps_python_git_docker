@@ -6,6 +6,8 @@ services:
     container_name: mongodb
     networks:
       - bayeta-net
+    volumes:
+      - mongo_data:/data/db
 
   bayeta:
     build: .
@@ -17,5 +19,9 @@ services:
     ports:
       - "5000:5000"
       
+
+volumes:
+  mongo_data:
+  
 networks:
   bayeta-net:
